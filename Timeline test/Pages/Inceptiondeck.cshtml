@@ -1,0 +1,210 @@
+﻿@page
+@model Timeline_test.Pages.InceptiondeckModel
+@{
+    ViewData["Title"] = "Inception Deck - Gasolin i Ragnarock";
+}
+
+<style>
+    /* Mørk baggrund for hele siden */
+    body {
+        background-color: #1a1a1a; /* Mørk grå */
+        color: #1a1a1a; /* Hvid tekst */
+    }
+
+    /* Tilpasning af links */
+    a {
+        color: #ffa500; /* Orange farve til links */
+    }
+
+        a:hover {
+            color: #ffcc00; /* Lysere orange ved hover */
+        }
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #D2691E;
+        }
+
+        .slide {
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px solid #1a1a1a;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+            .slide h2 {
+                margin-top: 0;
+            }
+
+        .team-members, .key-features, .risks, .roadmap {
+            list-style-type: none;
+            padding: 0;
+        }
+
+            .team-members li, .key-features li, .risks li, .roadmap li {
+                margin-bottom: 10px;
+            }
+
+        .figur {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+            .figur img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 8px;
+            }
+    </style>
+</head>
+<body>
+    <div class="slide">
+        <h1>🚀 Inception Deck Layout (10 Essential Slides)</h1>
+    </div>
+
+    <div class="slide">
+        <h2>1️⃣ Title Slide: Project Name & Team</h2>
+        <p><strong>Project Name:</strong> Gasolin i Ragnarock</p>
+        <p><strong>Team Members & Roles:</strong></p>
+        <ul class="team-members">
+            <li>Esti: Interviews / Biography page</li>
+            <li>Hamza: LayoutinkitMain page</li>
+            <li>Martin: Timeline page</li>
+        </ul>
+        <p><strong>Date:</strong> 18/03/2025</p>
+    </div>
+
+    <div class="slide">
+        <h2>2️⃣ Why Are We Here? (Mission Statement)</h2>
+        <p><strong>Problem Statement:</strong> That people can access the band's information and background at the Roskilde Festival.</p>
+        <p><strong>Business Goals:</strong> We want to make more people aware of the famous band of old, that has shaped Danish music and just generally make them more interested in Danish music history.</p>
+        <p><strong>Key Benefits:</strong> Ragnarok Rock Museum will host a special exhibition about the legendary Danish rock band Gasolin in connection with the Roskilde Festival. The exhibition will provide festival guests with an in-depth insight into the band's history, its members, and their musical legacy.</p>
+    </div>
+
+    <div class="slide">
+        <h2>3️⃣ Elevator Pitch</h2>
+        <p>"For Roskilde Festival people, who has on the moment no access to information about the band that is playing, Ragnarock and Gasolin is a website that give access to information about the band Gasolin. Unlike the current situation, our product gives quickly access to the information."</p>
+        <div class="figur">
+            <!-- Insert image or mockup here -->
+            <img src="path/to/your/image.jpg" alt="Elevator Pitch Visual">
+        </div>
+    </div>
+
+    <div class="slide">
+        <h2>4️⃣ Design the Product Box</h2>
+        <p><strong>Visual representation of the product (mockup, branding idea)</strong></p>
+        <p><strong>Key Features & Value Proposition:</strong> QR-code to the front page, biography/interview page, and timeline.</p>
+        <div class="figur">
+            <!-- Insert image or mockup here -->
+            <img src="path/to/your/image.jpg" alt="Product Box Visual">
+        </div>
+    </div>
+
+    <div class="slide">
+        <h2>5️⃣ Not List (What We Won't Do)</h2>
+        <p>Clearly define what is NOT in scope.</p>
+        <ul class="key-features">
+            <li>No mobile app (only web-based).</li>
+            <li>Helps prevent scope creep.</li>
+            <li>Keep it simple (financial first pretty after).</li>
+        </ul>
+    </div>
+
+    <div class="slide">
+        <h2>6️⃣ Meet the Neighbors</h2>
+        <p><strong>Who’s involved?</strong></p>
+        <ul class="team-members">
+            <li>The developer team: Esti, Hamza, Martin.</li>
+            <li>The festival people</li>
+            <li>The museum owners and staff/stakeholders.</li>
+        </ul>
+        <p><strong>Roles & Responsibilities:</strong></p>
+        <ul class="team-members">
+            <li>Esti: Interviews / Biography page</li>
+            <li>Hamza: LayoutLinKitMain page</li>
+            <li>Martin: Timelord timeline page</li>
+            <li>Team: at the end of the project we make little changes to make it fit/ work.</li>
+        </ul>
+        <p>We arrange a coffee meeting on Wednesday, 13 o’clock.</p>
+    </div>
+
+    <div class="slide">
+        <h2>7️⃣ Show the Solution (Architecture Overview)</h2>
+        <p><strong>High-level technical architecture (diagram or sketch)</strong></p>
+        <div class="figur">
+            <!-- Insert image or mockup here -->
+            <img src="path/to/your/image.jpg" alt="Architecture Overview">
+        </div>
+        <p><strong>Key components & integrations:</strong></p>
+        <ul class="key-features">
+            <li>Main page, interview/ biography page, timeline page, QR-code, text, pictures, video(s).</li>
+        </ul>
+        <p><strong>User flow or system interaction:</strong></p>
+        <div class="figur">
+            <!-- Insert image or mockup here -->
+            <img src="path/to/your/image.jpg" alt="User Flow">
+        </div>
+    </div>
+
+    <div class="slide">
+        <h2>8️⃣ What Keeps Us Up at Night? (Risks & Challenges)</h2>
+        <p><strong>Technical risks:</strong></p>
+        <ul class="risks">
+            <li>Project (website) not working or not working together (the 3 website parts).</li>
+            <li>The videos not playing from the website.</li>
+        </ul>
+        <p><strong>Business risks:</strong></p>
+        <ul class="risks">
+            <li>Project not getting used – no profit.</li>
+        </ul>
+        <p><strong>Operational risks:</strong></p>
+        <ul class="risks">
+            <li>Not finished the project at the end of the week.</li>
+            <li>Technical difficulties.</li>
+        </ul>
+    </div>
+
+    <div class="slide">
+        <h2>9️⃣ What’s Going to Give? (Trade-offs & Priorities)</h2>
+        <p>Choose between:</p>
+        <ul class="key-features">
+            <li>🔥 Scope (features)</li>
+            <li>⏳ Time (delivery deadlines)</li>
+            <li>💰 Budget (resources)</li>
+        </ul>
+        <p><strong>What are our non-negotiables?</strong></p>
+        <ul class="key-features">
+            <li>Need to be finished before the deadline.</li>
+            <li>Make the basics work/ function before making the layout and design beautiful.</li>
+        </ul>
+    </div>
+
+    <div class="slide">
+        <h2>🔟 Size It Up & Plan of Attack</h2>
+        <p><strong>Rough estimates (Story Points (5)):</strong></p>
+        <p>Finishing one page will take around 18 to 25 hours. We have 3 pages and 3 people. Some functions can present a challenge, which will take more time, so one page could be quicker to finish than others.</p>
+        <p><strong>High-level roadmap (What are the first steps?):</strong></p>
+        <ul class="roadmap">
+            <li>Inception deck, group members start to work on their part of the project, at the end combining groups work and when time over make it look good.</li>
+        </ul>
+        <p><strong>What needs to happen next?</strong></p>
+        <ul class="roadmap">
+            <li>When finished project (website) uploading one website hosting services.</li>
+        </ul>
+    </div>
+</body>
+</html>
